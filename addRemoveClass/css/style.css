@@ -1,0 +1,25 @@
+/**
+ * file: style.css
+ * purpose: styles, animation etc
+ * further development: meyer reset perhaps?
+ * Animation inspired by: https://www.w3schools.com/css/css3_animations.asp
+**/
+
+@keyframes colorsTransform {
+  from {
+    background-color: red;
+  }
+
+  to {
+    background-color: yellow;
+  }
+}
+
+.chChanges {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  background-color: red;
+  animation-name: colorsTransform;
+  animation-duration: 4s;
+}
