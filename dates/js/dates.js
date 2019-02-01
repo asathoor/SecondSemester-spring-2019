@@ -23,22 +23,26 @@ console.log('The hour is: ' + hour);
 // after a similar method you can get the month, time etc.
 // see: https://www.w3schools.com/js/js_date_methods.asp
 
-// translate this to your language (unfortunately this is Klingon)
+// translate this to your language (unfortunately this is the Klingon 7-day week)
 let week = [
-  'Kracth',
-  'Ooomph',
-  'Zrooff',
-  'Kweenp',
-  'Xrpzt',
+  'Kract',
+  'Ooomp',
+  'Zroof',
+  'Kween',
+  'Aargh',
   'Rizzz',
-  'Argeh'
+  'Boomm'
 ]; // note: the strings in the list are separated by commas.
 
 // what is the result of this in the console, and why?
 console.log(week[day]);
 
-/* IS THE SHOP OPEN BY NOW? */
-// Tip: here is kind of the logic that you need ...
+/*
+ IS THE SHOP OPEN BY NOW?
+
+ The following code is similar to the code you needd.
+*/
+
 var x = 1;
 
 if (x == 1){
