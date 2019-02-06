@@ -16,4 +16,4 @@ Motto: Code is poetry!
 * Add submodule
 * Update
 
-For more information watch [this video:](https://www.youtube.com/watch?time_continue=1&v=moC2KyxGb10)
+For more information watch [this video](https://www.youtube.com/watch?time_continue=1&v=moC2KyxGb10).
