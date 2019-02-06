@@ -2,17 +2,9 @@
  * file: js.js
  * purpose: lists and the date object + bonus: write html to an element
  **/
-console.log('Stardate 235678.89: JavaScript from js/dates.js is up and running.');
-
-// add the days of the week in your language as a list
-
-// @url: https://www.w3schools.com/js/js_date_methods.asp
-
 /** HOW TO ADD ANY HTML TO A TAG **/
 var myText = document.getElementById('content');
 myText.innerHTML += '<h2>The Exorbitant Shop</h2>';
-// What is the difference between += and + ?
-// Try this: add an image
 
 /** THE DATE OPBJECT **/
 let now = new Date();
@@ -25,9 +17,9 @@ console.log('The hour is: ' + hour);
 
 // translate this to your language (unfortunately this is the Klingon 7-day week)
 let week = [
-  'Kract',
-  'Ooomp',
-  'Zroof',
+  'Sontag : closed',
+  'Montag',
+  'Dienstag',
   'Kween',
   'Aargh',
   'Rizzz',
@@ -43,17 +35,26 @@ console.log(week[day]);
  The following code is similar to the code you needd.
 */
 
-var x = 1;
+//var x = 1;
+//x = hour;
 
-if (x == 1){
+if (hour >= 9 || hour <= 17){
   var open = 'Open now - today till 16.00';
+    // here: write code that will send the open message
+    // to the content id ...
+    // tip: document.getE...
+   var openTxt = document.getElementById('content');
+    openTxt.innerHTML += open; 
   console.log(open);
 
+}
+if (hour > 17 || hour < 9){
+    // we're closed
 }
 else {
   var open = 'The shop is closed';
-  console.log(open);
+  //
 }
 
-/** LOOP **/
-// loop out the names of the days of the week
+
+
