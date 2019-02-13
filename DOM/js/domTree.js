@@ -58,7 +58,6 @@ let a = "I am a global and unprotected variable."; // all scripts may use this: 
     myWindow.resizeTo(333,333);
   });
   */
-  *
 
   // Create your own objects:
   var person = {
