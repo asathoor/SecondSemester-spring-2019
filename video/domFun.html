@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>DOM Fun</title>
   <style>
+    /** Animation **/
+    @keyframes anima {
+      from {
+        background-color: red;
+        -ms-transform: rotate(180deg); /* IE 9 */
+        -webkit-transform: rotate(180deg); /* Safari 3-8 */
+        transform: rotate(0deg);
+      }
+      to {
+        background-color: orange;
+        -ms-transform: rotate(45deg); /* IE 9 */
+        -webkit-transform: rotate(45deg); /* Safari 3-8 */
+        transform: rotate(45deg);
+      }
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: sans-serif;
+    }
+
     .dots {
       position: absolute;
-      background-color: green;
-      width: 24px;
-      height: 24px;
+      background-color: orange;
+      width: 4px;
+      height: 666px;
+      animation-name: anima;
+      animation-duration: 10s;
+      -ms-transform: rotate(45deg); /* IE 9 */
+      -webkit-transform: rotate(45deg); /* Safari 3-8 */
+      transform: rotate(45deg);
+      /*animation-iteration-count: infinite;*/
     }
 
     #result {
@@ -18,9 +47,12 @@
     }
   </style>
 </head>
+
 <body>
   <h1>Create HTML on the fly</h1>
+  <h2>Animated divs</h2>
   <div id="result"></div>
   <script src="js/domFun.js"></script>
 </body>
+
 </html>
