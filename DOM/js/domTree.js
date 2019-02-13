@@ -1,6 +1,7 @@
 /**
  * file: domTree.js
  * purpose: understand the dom and work in protected mode
+ * important: run this on a server / localhost
  **/
 "use strict"; // strict mode: better error messages, but more stict on errors
 
@@ -52,10 +53,10 @@ let a = "I am a global and unprotected variable."; // all scripts may use this: 
 
   // THE WINDOW OBJECT (open and close browser windows)
   /*
-  let resize = window.addEventListener('click', function(){
-    var myWindow;
-    myWindow = window.open("openMe.html", "", "width=100, height=100");
-    myWindow.resizeTo(333,333);
+  // in general a click on the window is not good practise (links ... well ...)
+  // use something else ...
+  let openAwindow = window.addEventListener('click', function(){
+    this.myWindow = window.open("openMe.html", "", "width=580, height=335");
   });
   */
 
