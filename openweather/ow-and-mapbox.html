@@ -88,13 +88,14 @@
           zoom: 7.0
         });
 
+        // again: the lat lon from openweathermap
         var geojson = {
           type: 'FeatureCollection',
           features: [{
             type: 'Feature',
             geometry: {
               type: 'Point',
-              coordinates: [10.14, 56.14]
+              coordinates: [data.coord.lon, data.coord.lat]
             },
             properties: {
               title: 'Aarhus',
@@ -128,7 +129,7 @@
         });
 
 
-        //// ends what I add here ---
+        //// --- >>>
 
       }).catch(err => {
         // Do something for an error here
