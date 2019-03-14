@@ -98,8 +98,8 @@
               coordinates: [data.coord.lon, data.coord.lat]
             },
             properties: {
-              title: 'Aarhus',
-              description: 'Weather: ' + data.weather[0].main
+              title: data.name, // Aarhus
+              description: data.weather[0].main // the weather txt
             }
           }]
         };
@@ -123,7 +123,9 @@
             .setPopup(new mapboxgl.Popup({
                 offset: 25
               }) // add popups
-              .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'))
+              .setHTML('<h3>' + marker.properties.title + '</h3><p>'
+              + marker.properties.description + ':<br> '
+              + data.weather[0].description + '.</p>'))
             .addTo(map);
 
         });
