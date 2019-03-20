@@ -46,7 +46,7 @@
       console.log(data); // show what's in the json
       $('#result').append('<div class="weatherInfo">' + data.weather[0].main +
         ' in ' + data.name +
-        '<figure><img src="http://openweathermap.org/img/w/' + data.weather[0].icon + '.png" alt="The weather : ' + data.weather[0].main + '"></figure>' +
+        '<figure><img id="weatherSymbol" src="http://openweathermap.org/img/w/' + data.weather[0].icon + '.png" alt="The weather : ' + data.weather[0].main + '"></figure>' +
         '</div>');
 
     }).catch(err => {
