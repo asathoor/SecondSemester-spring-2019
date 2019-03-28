@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title> Front Trends, Warsaw 2017 </title>
+
+	  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"
+	   integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ=="
+	   crossorigin=""/>
+
+	<style>
+		body { margin:0; padding:0; }
+        #mapid { position:absolute; top:0; bottom:0; width:100%; }
+
+	</style>
+
+
+</head>
+<body>
+
+	<div id='mapid'></div>
+
+	 <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"
+	   integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg=="
+	   crossorigin=""></script>
+
+	<script>
+		// Positions Warsaw
+		// roadshow er centrum: 52.224292,20.9989873
+		var lon = 20.9989873;
+		var lat = 52.224292;
+		var zoom = 30;
+		var leafletUrl = 'https://api.mapbox.com/styles/v1/mapbox/streets-v10/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYXNhdGhvb3IiLCJhIjoiY2oyd3hlbzU3MDA5NzJxbm9iMjczanJndCJ9.HahDB7Z1rrD5THIYQh6t4g';
+
+		// set up the map
+		var mymap = L.map('mapid').setView([ lat, lon  ], 13);
+
+		// the map tile
+		L.tileLayer( leafletUrl , {
+		    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+		    maxZoom: 50,
+		    id: 'mapbox://styles/asathoor/cjfktdidngvx92ro7quci300o',
+		    accessToken: 'pk.eyJ1IjoiYXNhdGhvb3IiLCJhIjoiY2oyd3hlbzU3MDA5NzJxbm9iMjczanJndCJ9.HahDB7Z1rrD5THIYQh6t4g'
+		}).addTo(mymap);
+
+		/*
+		EXPO XXI, Hall 4
+		Ignacego Prądzyńskiego 12/14
+		01-222 Warszawa
+
+		52.224893,20.9599153,17
+		*/
+		var marker = L.marker([52.224893, 20.9599153]).addTo(mymap);
+		marker.bindPopup('<b>EXPO XXI</b><br><a href="https://2017.front-trends.com/venue/" target="_blank">Venues</a><br>Ignacego Prądzyńskiego 12/14 <br> 01-222 Warszawa.').openPopup();
+
+		/*
+		Party Venue
+		Concept 13
+		Bracka 9 Street
+
+		52.2306375,21.0188118
+		*/
+		var marker = L.marker([52.2306375, 21.0188118]).addTo(mymap);
+		marker.bindPopup('<b>Party Venue</b><br> Concept 13<br> Bracka 9 Street ').openPopup();
+		 /*
+		Roadshow and Mixer Venue
+		Klub Medyka
+		Oczki 1A Street
+
+		52.224292,20.9989873
+		*/
+		var marker = L.marker([52.224292, 20.9989873]).addTo(mymap);
+		marker.bindPopup('Roadshow and Mixer Venue<br> Klub Medyka<br> Oczki 1A Street').openPopup();
+
+		/*
+		Hotel
+		Hotel Gromada Centrum Sp. z o.o. SKA
+		52.2339533,21.0141529
+		*/
+		var marker = L.marker([52.2339533, 21.0141529]).addTo(mymap);
+		marker.bindPopup('Hotel Gromada Centrum Sp. z o.o. SKA').openPopup();
+
+		/*
+		On click position
+		*/
+		var popup = L.popup();
+
+		function onMapClick(e) {
+		    popup
+		        .setLatLng(e.latlng)
+		        .setContent("You clicked the map at " + e.latlng.toString())
+		        .openOn(mymap);
+		}
+
+		mymap.on('click', onMapClick);
+	</script>
+
+</body>
+</html>

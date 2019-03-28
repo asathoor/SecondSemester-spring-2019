@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8' />
+  <title>Display a map</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      color: #fff;
+      font-family: sans-serif;
+    }
+
+    #map, #map2 {
+      /*
+      position:absolute;
+      top:0;
+      bottom:0;
+      width:100%;
+    */
+      width: 300px;
+      height: 300px;
+      /*border-radius: 50%;*/
+      border-radius: 27px;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Aarhus</h1>
+  <div id='map'></div>
+
+  <script>
+    // map
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYXNhdGhvb3IiLCJhIjoiY2oyd3hlbzU3MDA5NzJxbm9iMjczanJndCJ9.HahDB7Z1rrD5THIYQh6t4g';
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/asathoor/cjtibvem88e7m1fpewh957gld',
+      center: [10.19, 56.15],
+      pitch: 45,
+      bearing: 23,
+      zoom: 11.2345
+    });
+
+  </script>
+
+</body>
+
+</html>
