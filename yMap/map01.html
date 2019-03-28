@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8' />
+  <title>Display a map</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #map {
+      /*
+      position:absolute;
+      top:0;
+      bottom:0;
+    width:100%;*/
+      width: 100%;
+      height: 300px;
+      border-radius: 50%
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id='map'></div>
+
+  <h1>Aarhus - where vikings come alive</h1>
+
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur facilis dolorum et ex, dicta perspiciatis libero exercitationem esse reiciendis officiis atque, iure sapiente sequi similique maiores aut tenetur accusamus aperiam?
+  </p>
+
+    <h2>How to get there</h2>
+
+  <p>Lorem</p>
+  <p>Lorem</p>
+
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYXNhdGhvb3IiLCJhIjoiY2oyd3hlbzU3MDA5NzJxbm9iMjczanJndCJ9.HahDB7Z1rrD5THIYQh6t4g';
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/asathoor/cjtgwqdf270w71foabx3j0vr8',
+      center: [10.237269, 56.150851], // aarhus
+      pitch: 153,
+      bearing: 230,
+      zoom: 12.0
+    });
+  </script>
+
+</body>
+
+</html>

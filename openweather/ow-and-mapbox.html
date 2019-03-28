@@ -61,8 +61,9 @@
   <!-- and here is a map from Mapbox / OpenStreetmap -->
   <div id="map"></div>
 
-  <a href="https://docs.mapbox.com/help/tutorials/custom-markers-gl-js/#style-popups">Tutorial from Mapbox</a>
-
+<ul>
+  <li>Pop up and marker <a href="https://docs.mapbox.com/help/tutorials/custom-markers-gl-js/#style-popups">Tutorial from Mapbox</a></li>
+</ul>
   <script>
     let aarhus = "https://api.openweathermap.org/data/2.5/weather?q=Aarhus,DK&appid=201d090c9cceacfc8931df89310ebfbb&units=metric";
 
@@ -124,7 +125,7 @@
                 offset: 25
               }) // add popups
               .setHTML('<h3>' + marker.properties.title + '</h3><p>'
-              + marker.properties.description + ':<br> '
+              + marker.properties.description + ': '
               + data.weather[0].description + '.</p>'))
             .addTo(map);
 
