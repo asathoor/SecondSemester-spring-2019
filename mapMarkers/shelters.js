@@ -5,7 +5,7 @@
       "properties": {
         "Bookbar": "Ja",
         "Type": "Shelters",
-        "Navn": "Shelter i H�rhaven p� bakken"
+        "Navn": "Shelter i Hørhaven på bakken"
       },
       "geometry": {
         "coordinates": [
@@ -37,7 +37,7 @@
       "properties": {
         "Bookbar": "Ja",
         "Type": "Shelters",
-        "Navn": "Shelter i Moesg�rd Skov"
+        "Navn": "Shelter i Moesgaard Skov"
       },
       "geometry": {
         "coordinates": [
@@ -53,7 +53,7 @@
       "properties": {
         "Bookbar": "Ja",
         "Type": "Shelters",
-        "Navn": "Dagshelter i H�rhaven"
+        "Navn": "Dagshelter i Hørhaven"
       },
       "geometry": {
         "coordinates": [
@@ -69,7 +69,7 @@
       "properties": {
         "Bookbar": "Ja",
         "Type": "Shelters",
-        "Navn": "Madpakkehus Delta i Skjoldh�jkilen"
+        "Navn": "Madpakkehus Delta i Skjoldhøjkilen"
       },
       "geometry": {
         "coordinates": [
@@ -85,7 +85,7 @@
       "properties": {
         "Bookbar": "Ja",
         "Type": "Shelters",
-        "Navn": "Madpakkehus Epsilon i Skjoldh�jkilen"
+        "Navn": "Madpakkehus Epsilon i Skjoldhøjkilen"
       },
       "geometry": {
         "coordinates": [
@@ -117,7 +117,7 @@
       "properties": {
         "Bookbar": "Ja",
         "Type": "Shelters",
-        "Navn": "�bo Skov, 2 shelters"
+        "Navn": "Åbo Skov, 2 shelters"
       },
       "geometry": {
         "coordinates": [
@@ -149,7 +149,7 @@
       "properties": {
         "Bookbar": "Ja",
         "Type": "Shelters",
-        "Navn": "Shelterplads ved Eg� Engs� - fem stk."
+        "Navn": "Shelterplads ved Egå Engsø - fem stk."
       },
       "geometry": {
         "coordinates": [
@@ -181,7 +181,7 @@
       "properties": {
         "Bookbar": "Ja",
         "Type": "Shelters",
-        "Navn": "Shelter i H�rhaven i skoven"
+        "Navn": "Shelter i Hørhaven i skoven"
       },
       "geometry": {
         "coordinates": [
@@ -197,7 +197,7 @@
       "properties": {
         "Bookbar": "Ja",
         "Type": "Shelters",
-        "Navn": "Madpakkehus Alfa i Skjoldh�jkilen"
+        "Navn": "Madpakkehus Alfa i Skjoldhøjkilen"
       },
       "geometry": {
         "coordinates": [
@@ -229,7 +229,7 @@
       "properties": {
         "Bookbar": "Ja",
         "Type": "Shelters",
-        "Navn": "Madpakkehus i �blehaven"
+        "Navn": "Madpakkehus i Æblehaven"
       },
       "geometry": {
         "coordinates": [
@@ -245,7 +245,7 @@
       "properties": {
         "Bookbar": "Ja",
         "Type": "Shelters",
-        "Navn": "Madpakkehus Gamma i Skjoldh�jkilen"
+        "Navn": "Madpakkehus Gamma i Skjoldhøjkilen"
       },
       "geometry": {
         "coordinates": [
@@ -277,7 +277,7 @@
       "properties": {
         "Bookbar": "Ja",
         "Type": "Shelters",
-        "Navn": "Shelter ved Moesg�rd Strand"
+        "Navn": "Shelter ved Moesgaard Strand"
       },
       "geometry": {
         "coordinates": [
@@ -309,7 +309,7 @@
       "properties": {
         "Bookbar": "Ja",
         "Type": "Shelters",
-        "Navn": "Shelter p� Vestereng"
+        "Navn": "Shelter på Vestereng"
       },
       "geometry": {
         "coordinates": [
