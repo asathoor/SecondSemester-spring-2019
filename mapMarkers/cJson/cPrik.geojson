@@ -1,0 +1,20 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "Hammelev huset",
+        "kager": 21
+      },
+      "geometry": {
+        "coordinates": [
+          9.386083,
+          55.245332
+        ],
+        "type": "Point"
+      },
+      "id": "aa9a0a6bb6b8fbc9eaeef4b08c571966"
+    }
+  ],
+  "type": "FeatureCollection"
+}

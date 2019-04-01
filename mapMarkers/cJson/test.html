@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Json test</title>
+</head>
+
+<body>
+
+  <ul id="tekst"></ul>
+
+  <script>
+
+    let minAdresse = [{
+        "navn": "Per",
+        "adresse": "Paradisæblevej 13",
+        "by": "Viby J",
+        "postnummer": 8260,
+        "mob": 0045123456
+      },
+      {
+        "navn": "Dante",
+        "adresse": "Inferno 13, Kld.",
+        "by": "Viby J",
+        "postnummer": 8260,
+        "mob": 0045123456
+      },
+      {
+        "navn": "Viggo",
+        "adresse": "Inferno 13, Kld.",
+        "by": "Viby J",
+        "postnummer": 8260,
+        "mob": 0011666666
+      },
+      {
+        "navn": "Lucifer",
+        "adresse": "Inferno 13, Kld.",
+        "by": "Viby J",
+        "postnummer": 8260,
+        "mob": 0045123456
+      }
+    ];
+
+    console.log(minAdresse);
+    //document.getElementById("tekst").innerHTML = minAdresse[1].navn;
+
+    for (var i = 0; i < minAdresse.length; i++) {
+      // skriver JSON til #tekst
+      document.getElementById("tekst").innerHTML += "<li>" + minAdresse[i].navn + "</li>";
+    }
+
+    document.getElementById("tekst").innerHTML += "<li>" + minAdresse[1].navn + "</li>";
+  </script>
+</body>
+
+</html>
