@@ -1,0 +1,21 @@
+[{
+  "name": "Lucky Luke",
+  "address": "Nowhere Gulch",
+  "phone": 123456
+} ,
+{
+  "name": "Joe Dalton",
+  "address": "Texas State Prison",
+  "phone": 123457
+} ,
+{
+  "name": "Jack Dalton",
+  "address": "Texas State Prison",
+  "phone": 123459
+} ,
+{
+  "name": "Averel Dalton",
+  "address": "Texas State Prison",
+  "phone": 333
+}
+]

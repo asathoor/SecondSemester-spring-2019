@@ -1,0 +1,35 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "who": "Teachers",
+        "what": "School"
+      },
+      "geometry": {
+        "coordinates": [
+          9.38722,
+          55.246153
+        ],
+        "type": "Point"
+      },
+      "id": "9d7800bb0a08d4665e51b0a3e79b7f79"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "who": "Per",
+        "address": "Bygade "
+      },
+      "geometry": {
+        "coordinates": [
+          9.390516,
+          55.244859
+        ],
+        "type": "Point"
+      },
+      "id": "9edfb8503a955d192f7764b515ccdf11"
+    }
+  ],
+  "type": "FeatureCollection"
+}

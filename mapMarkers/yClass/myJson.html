@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Json sample</title>
+  <style>
+    .person {
+      background-color: #000;
+      color: #fff;
+      padding: 1.2345678rem;
+    }
+  </style>
+</head>
+<body>
+
+<div id="seeJson"></div>
+
+<script>
+  let myJson = [{
+    "name": "Lucky Luke",
+    "address": "Nowhere Gulch",
+    "phone": 123456
+  } ,
+  {
+    "name": "Joe Dalton",
+    "address": "Texas State Prison",
+    "phone": 123457
+  } ,
+  {
+    "name": "Jack Dalton",
+    "address": "Texas State Prison",
+    "phone": 123459
+  } ,
+  {
+    "name": "Averel Dalton",
+    "address": "Texas State Prison",
+    "phone": 333
+  }
+  ];
+
+  // console.log( myJson );
+
+  // loop out data
+  for (i=0;i < myJson.length ;i++) {
+      //console.log( "Hey I am a loop. I run: " + i );
+      //console.log( myJson[i].name );
+
+      // write to #seeJson
+      seeJson.innerHTML += "<p class='person'>" + myJson[i].name + "</p>";
+  }
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
